@@ -11,6 +11,8 @@ body {
     line-height: 1.6;
     background-color: #e8f5e9;
     color: #2e7d32;
+    position: relative;
+    min-height: 100vh;
 }
 
 header {
@@ -85,4 +87,15 @@ button:hover {
 textarea[readonly] {
     background: #c8e6c9;
     border-color: #a5d6a7;
+}
+
+/* Watermark styles */
+.watermark {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    font-size: 0.9rem;
+    color: rgba(46, 125, 50, 0.6);
+    pointer-events: none;
+    user-select: none;
 }
