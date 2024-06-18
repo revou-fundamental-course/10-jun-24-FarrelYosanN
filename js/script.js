@@ -6,9 +6,9 @@ document.addEventListener('DOMContentLoaded', function() {
     const resetButton = document.getElementById('reset');
     const reverseButton = document.getElementById('reverse');
 
-    convertButton.addEventListener('click', function() {
+    convertButton.addEventListener('click', () => {
         const celsius = parseFloat(celsiusInput.value);
-        
+
         if (isNaN(celsius)) {
             alert('Please enter a valid temperature.');
             return;
@@ -19,15 +19,15 @@ document.addEventListener('DOMContentLoaded', function() {
         calculationOutput.value = `${celsius}°C * (9/5) + 32 = ${fahrenheit.toFixed(2)}°F`;
     });
 
-    resetButton.addEventListener('click', function() {
+    resetButton.addEventListener('click', () => {
         celsiusInput.value = '';
         fahrenheitInput.value = '';
         calculationOutput.value = '';
     });
 
-    reverseButton.addEventListener('click', function() {
+    reverseButton.addEventListener('click', () => {
         const fahrenheit = parseFloat(fahrenheitInput.value);
-        
+
         if (isNaN(fahrenheit)) {
             alert('Please enter a valid temperature.');
             return;
